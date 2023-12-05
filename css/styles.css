@@ -418,6 +418,7 @@ body {
 
 
 /* ============== FOOTER ============== */
+
 .studio-white {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -503,6 +504,62 @@ body {
     margin-right: auto;
 }
 
+.footer-subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-subscribe-input {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    padding-left: 16px;
+    color: var(--WHITE, #FFF);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+        /* 200% */
+    letter-spacing: 0.04em;
+}
+
+/*.connection-form-field-input {
+    это было еще в описании инпута в форме!!!
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: 0px solid transparent;
+} */
+
+.footer-subscribe-btn {
+    display: inline-flex;
+    min-width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border: none;
+    border-radius: 4px;
+    background: #4D5AE5;
+    color: var(--WHITE, #FFF);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+        /* 150% */
+    letter-spacing: 0.04em;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+    background: #404BBF;
+}
+
+.footer-subscribe-btn-icon {
+     fill: #FFFFFF;
+}
 
 
 /* ============== BACKDROP ============== */
@@ -662,7 +719,6 @@ body {
     border-radius: 2px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /*fill: transparent;*/
     margin-right: 8px;
 }
 
@@ -670,14 +726,7 @@ body {
 + .connection-form-checkbox-label
 > .connection-form-own-checkbox {
     background-color: #404BBF;
-    border: 1px solid #404BBF;
-    /*fill: #F4F4FD;*/
-}
-
-.connection-form-checkbox:focus
-+.connection-form-checkbox-label
->.connection-form-own-checkbox {
-    outline: 1px solid rgba(0, 0, 255, 0.502);
+    border: none;
 }
 
 .connection-form-own-checkbox-icon {
@@ -687,8 +736,12 @@ body {
 
 .connection-form-checkbox:checked
 + .connection-form-checkbox-label
-> .connection-form-own-checkbox-icon {
+.connection-form-own-checkbox-icon {
     opacity: 1;
+}
+
+.connection-form-checkbox:focus+.connection-form-checkbox-label>.connection-form-own-checkbox {
+    outline: 1px solid rgba(0, 0, 255, 0.5);
 }
 
 .connection-form-checkbox-label {
@@ -698,6 +751,15 @@ body {
         /* 116.667% */
     letter-spacing: 0.04em;
     color: #8E8F99;
+}
+
+.connection-form-accent-color {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.33
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+    color: #4D5AE5;
 }
 
 .connection-form-checkbox-wrapper {
