@@ -515,7 +515,7 @@ body {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     background-color: transparent;
     padding-left: 16px;
-    color: var(--WHITE, #FFF);
+    color: #FFF;
     font-size: 12px;
     font-weight: 400;
     line-height: 2;
@@ -528,6 +528,10 @@ body {
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: 0px solid transparent;
 } */
+
+.footer-subscribe-input::placeholder {
+    color: #FFFFFF;
+}
 
 .footer-subscribe-btn {
     display: inline-flex;
